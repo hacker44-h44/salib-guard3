@@ -356,6 +356,9 @@ Commands list :
 !stats
 امار کلی گروه
 
+!translate
+ترجمه گر
+
 !modlist
 لیست مدیران گروه
 
