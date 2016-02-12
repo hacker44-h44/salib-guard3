@@ -344,6 +344,9 @@ Commands list :
 !who
 لیست+ایدی همه اعضا
 
+!echo name
+اکو
+
 !stats
 امار کلی گروه
 
