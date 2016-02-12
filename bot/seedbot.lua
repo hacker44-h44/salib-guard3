@@ -344,6 +344,8 @@ Commands list :
 !lock username
 بستن یوزرنیم
 
+!feedback 
+پیام
 
 !who
 لیست+ایدی همه اعضا
