@@ -353,6 +353,9 @@ Commands list :
 !echo name
 اکو
 
+!webshot URL
+ادرس سایت بده ازش عکس بگیره
+
 !stats
 امار کلی گروه
 
