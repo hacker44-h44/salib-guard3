@@ -353,6 +353,11 @@ Commands list :
 !echo name
 اکو
 
+!addplugin Des Des.lua
+Add Plugin
+به جای Des محتویات یعنی کد ها و به جای Des.lua نام پلاگین.
+
+
 !webshot URL
 ادرس سایت بده ازش عکس بگیره
 
