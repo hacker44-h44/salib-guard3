@@ -358,6 +358,9 @@ Commands list :
 
 3-Rate Member ^
 
+!calc 2+3
+ماشین حساب
+
 !setowner [id]
 (id ایجاد مدیر جدید (همراه 
 
