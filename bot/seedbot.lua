@@ -341,6 +341,10 @@ Commands list :
 
 2-Statistics list ^
 
+!lock username
+بستن یوزرنیم
+
+
 !who
 لیست+ایدی همه اعضا
 
