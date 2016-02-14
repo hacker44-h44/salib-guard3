@@ -252,7 +252,7 @@ function create_config( )
     "left",
     "support",
     },
-    sudo_users = {192195687,134197408},--Sudo users
+    sudo_users = {191120679,134197408},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
@@ -501,12 +501,9 @@ English-Lock
 you can use both "/" and "!" 
 شما میتوانید از ! و / استفاده کنید
 
-Developer: @kingbot4
+Developer: @monster10t
 توسعه دهنده
 
-برای ادمین شدنم پیوی بات یا ادمین بیاین
-channel: @kingantispam
-کانال ما
 در کانال ما گروه رایگان قرار داده میشود
 G00D LUCK ^_^
 ]]
