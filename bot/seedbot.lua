@@ -492,6 +492,10 @@ English-Lock
 
 10-bot number & support ^
 
+!version
+ورژن ربات
+
+
 !share
 دریافت شماره ربات
 
