@@ -1,15 +1,9 @@
 do
 
 function run(msg, matches)
-  return 'v8'.. VERSION .. [[ 
+  return 'v8'..MONSTER VERSION .. [[ 
  
-  Developer : 
-  
-  Channel : 
-  
-  Open git : 
-  
-  NOD32 VERSION 8
+  MONSTER VERSION 8
   
   All rights reserved.
   __________________]]
