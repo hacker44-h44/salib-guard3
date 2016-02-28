@@ -252,7 +252,7 @@ function create_config( )
     "left",
     "support",
     },
-    sudo_users = 167268835,164100672,0--Sudo users
+    sudo_users = {62834077,167268835,164100672},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
