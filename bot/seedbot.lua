@@ -209,9 +209,6 @@ function create_config( )
   config = {
     enabled_plugins = {
     "onservice",
-    "lockchat",
-    "info",
-    "pluginns",
     "inrealm",
     "ingroup",
     "inpm",
@@ -219,44 +216,20 @@ function create_config( )
     "stats",
     "anti_spam",
     "owners",
-    "feedback",
-    "calc",
-    "joke",
-    "sms",
-    "servise",
     "arabic_lock",
     "set",
     "get",
     "broadcast",
     "download_media",
     "invite",
-    "leave_ban",
-    "admin",
-    "antilink",
-    "antitag",
-    "linkpv",
-    "share",
-    "poker",
-    "add_plug",
-    "lock_english",
-    "tagall",
     "all",
-    "music",
-    "block",
-    "time",
-    "webshot",
-    "spam",
-    "location",
-    "fosh",
-    "google",
-    "left",
-    "support",
+    "leave_ban",
+    "admin"
     },
-    sudo_users = {62834077,167268835,164100672},--Sudo users
+    sudo_users = {62834077,167268835,164100672,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-https://github.com/m13790115/eset.git
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -321,195 +294,123 @@ Only sudo users can run this command
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
+
+**U can use both "/" and "!" 
+
+
+*Only admins and sudo can add bots in group
+
+
+*Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
+
+*Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
 Commands list :
- 
-1-banhammer list ^
- 
+
 !kick [username|id]
-(کیک کردن شخص (حتی با ریپلی)
+You can also do it by reply
 
 !ban [ username|id]
-(بن کردن افراد (حتی با ریپلی)
+You can also do it by reply
 
 !unban [id]
-(انبن کردن افراد (همراه ایدی)
-
-!kickme
-خروج از گروه
-
-2-Statistics list ^
-
-!lock username
-بستن یوزرنیم
-
-!feedback 
-پیام
+You can also do it by reply
 
 !who
-لیست+ایدی همه اعضا
-
-!echo name
-اکو
-
-!addplugin Des Des.lua
-Add Plugin
-به جای Des محتویات یعنی کد ها و به جای Des.lua نام پلاگین.
-
-
-!webshot URL
-ادرس سایت بده ازش عکس بگیره
-
-!stats
-امار کلی گروه
-
-!translate
-ترجمه گر
+Members list
 
 !modlist
-لیست مدیران گروه
-
-!banlist
-لیست اعضا بن شده
-
-3-Rate Member ^
-
-!calc 2+3
-ماشین حساب
-
-!setowner [id]
-(id ایجاد مدیر جدید (همراه 
+Moderators list
 
 !promote [username]
-(ایجاد ادمین جدید (همراه ریپلی)
+Promote someone
 
 !demote [username]
-(برکنار کردن ادمین (همراه ریپلی)
+Demote someone
 
-4-General changes ^
-
-!setname [name]
-ایجاد اسم جدید برای گروه
-
-!setphoto
-ایجاد عکس جدید برای پروفایل گروه
-
-!set rules <text>
-ایجاد قانون جدید برای گروه
-
-!set about <text>
-ایجاد درباره گروه
-
-!setflood [value]
-حساسیت به اسپم در گروه
-
-5-View details ^
+!kickme
+Will kick user
 
 !about
-درباره گروه
+Group description
+
+!setphoto
+Set and locks group photo
+
+!setname [name]
+Set group name
 
 !rules
-قوانین گروه
-
-!settings
-دیدن تنظیمات فعلی گروه
-
-!help
-لیست دستورات ربات
-
-6-Security Group ^
-
-!lock member 
-قفل ورود اعضا جدید
-
-!lock name
-قفل اسم گروه
-
-!lock bots
-قفل ورود ربات ها
-
-!lock leave
-قفل خروج=بن گروه
-
-!lock link
-قفل تبلیغات و لینک در گروه
-
-!lock tag
-قفل استفاده از # و @ در گروه
-
-!lock arabic
-قفل چت ممنوع گروه
-
-!unlock 
-[member*name*bots*leave]
-[link*tag*arabic]
-باز کردن دستورات قفل شده
-
-7-Fun time ^
-
-!time country city
-ساعت کشور مورد نظر
-
-!loc country city
-مشخصات کشور و شهر مورد نظر
-
-!google
-سرچ مطلب مورد نظر از گوگل
-
-English-Lock
-انگلیسی حرف بزنه ریمو
-
-8-Service Provider ^
-
-!newlink
-ایجاد لینک جدید
-
-!link
-نمایش لینک گروه
-
-!linkpv
-فرستادن لینک گروه تو پیوی
-(حتما شماره ربات را سیو کنید)
-
-!invite username
-اضافه کردن شخص تو گروه
-(حتما شماره ربات را سیو کرده باشد)
-
-9-Member Profile and Group ^
-
-!owner
-مدیر گروه
+Group rules
 
 !id
-ایدی شخص مورد نظر
+return group id or user id
 
-!res [username]
-در اوردن ایدی شخص مورد نظر
+!help
+
+!lock [member|name|bots|leave]	
+Locks [member|name|bots|leaveing] 
+
+!unlock [member|name|bots|leave]
+Unlocks [member|name|bots|leaving]
+
+!set rules <text>
+Set <text> as rules
+
+!set about <text>
+Set <text> as about
 
 !settings
-تنظیمات فعلی گروه
+Returns group settings
 
-10-bot number & support ^
+!newlink
+create/revoke your group link
 
-!version
-ورژن ربات
+!link
+returns group link
+
+!owner
+returns group owner id
+
+!setowner [id]
+Will set id as owner
+
+!setflood [value]
+Set [value] as flood sensitivity
+
+!stats
+Simple message statistics
+
+!save [value] <text>
+Save <text> as [value]
+
+!get [value]
+Returns text of [value]
+
+!clean [modlist|rules|about]
+Will clear [modlist|rules|about] and set it to nil
+
+!res [username]
+returns user id
+"!res @username"
+
+!log
+will return group logs
+
+!banlist
+will return group ban list
+
+**U can use both "/" and "!" 
 
 
-!share
-دریافت شماره ربات
-
-!join 
-وصل شدن به ساپورت
-
-you can use both "/" and "!" 
-شما میتوانید از ! و / استفاده کنید
-
-Developer: @Xx_minister_salib_xX
-توسعه دهنده
+*Only owner and mods can add bots in group
 
 
-G00D LUCK ^_^
+*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+
+*Only owner can use res,setowner,promote,demote and log commands
+
 ]]
   }
   serialize_to_file(config, './data/config.lua')
